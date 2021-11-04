@@ -824,8 +824,19 @@
            "event_action": "story_complete",
            "event_category": "${title}",
            "send_to": ["UA-22101470-37"]
+
          }
-      },
+       }
+     }
+   }
+    </script>
+    </amp-analytics>
+      <amp-story-bookend src="AASLEE.github.io/bookend.json" layout="nodisplay"></amp-story-bookend>    
+   </amp-story>
+
+   <amp-analytics id="UA-22101470-37">
+      <script type="application/json">
+        {
          "requests": {
             "click": "https://badoo.onelink.me/PvDp/f3817c4"
          },
@@ -844,78 +855,10 @@
           "on": "story-click-through",
           "tagName": "a",
           "request": "click"
-           "send_to": ["UA-22101470-37"]
          }
-       },
-      "triggers": {
-        "story-audio-unmuted": {
-         "on": "story-audio-unmuted",
-         "request": "event"
-           "send_to": ["UA-22101470-37"]
-         }
-       },
-      "triggers": {
-        "story-audio-muted": {
-         "on": "story-audio-muted",
-         "request": "event"
-           "send_to": ["UA-22101470-37"]
-  }
-}
-         }
-       }
-     }
-   }
- </script>
-</amp-analytics>
-      <amp-analytics type="gtag" data-credentials="include">
-    <script type="application/json">
-    {
-        "vars": {
-            "gtag_id": "UA-22101470-37",
-            "config":{
-                "UA-22101470-37":{
-                    "groups":"default"
-                }
-            }
-        },
-        "triggers": {
-            "storyProgress": {
-                "on": "story-page-visible",
-                "vars": {
-                    "event_name": "custom",
-                    "event_action": "story_progress",
-                    "event_category": "${title}",
-                    "event_label": "${storyPageId}",
-                    "send_to": ["UA-22101470-37"]
-                }
-            },
-            "storyEnd": {
-                "on": "story-last-page-visible",
-                "vars": {
-                    "event_name": "custom",
-                    "event_action": "story_complete",
-                    "event_category": "${title}",
-                    "send_to": ["UA-22101470-37"]
-                }
-            },
-            "anchorClicks": {
-                "on": "click",
-                "request": "pageview",
-                "selector": "a.cta-a",
-                "vars": {
-                    "event_name": "custom",
-                    "event_action": "cta_clicked",
-                    "event_category": "${title}",
-                    "event_label": "${ctalink}",
-                    "send_to": ["UA-22101470-37"]
-                }
-            }
-        }
+      }
     }
-    </script>
-    </amp-analytics>
-      <amp-story-bookend src="AASLEE.github.io/bookend.json" layout="nodisplay"></amp-story-bookend>    
-   </amp-story>
-
+         </script>
+      </amp-analytics>
 </body>
 </html>
